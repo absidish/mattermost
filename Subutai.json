@@ -11,8 +11,7 @@
   ],
   "peer-criteria": [
     {
-      "name": "mattermost",
-      "max-price": "50"
+      "name": "mattermost"
     }
   ],
   "configuration": {
@@ -25,12 +24,6 @@
       }
     ],
     "groups": [
-      {
-        "name": "db",
-        "hostnames": [
-          "mysql"
-        ]
-      },
       {
         "name": "mattermost",
         "hostnames": [
