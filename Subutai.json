@@ -3,7 +3,7 @@
   "description": "Subutai Mattermost",
   "containers": [
     {
-      "hostname": "debian",
+      "hostname": "mattermost",
       "template": "debian-scratch",
       "peer-criteria": "mattermost",
       "size": "${dbcontainertype}"
