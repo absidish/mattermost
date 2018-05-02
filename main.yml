@@ -1,9 +1,4 @@
 ---
-- hosts: localhost
-  tasks:
-     - name: install req
-       shell: ansible-galaxy install -r /opt/roles/mattermost/requirements.yml
-
 - hosts: all
   remote_user: root
   gather_facts: yes
