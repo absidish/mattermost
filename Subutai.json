@@ -22,7 +22,7 @@
         "extra-vars": [],
         "groups": [
             {
-                "name": "webservers",
+                "name": "mattermost",
                 "hostnames": [
                     "${contName}"
                 ]
