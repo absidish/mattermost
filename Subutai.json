@@ -3,24 +3,10 @@
   "description": "Subutai Mattermost",
   "containers": [
     {
-      "hostname": "mysql",
-      "template": "mysql@280dcda67a67d071970ff838d0331c33c0c04710",
+      "hostname": "debian",
+      "template": "debian-scratch",
       "peer-criteria": "mattermost",
       "size": "${dbcontainertype}"
-    },
-    {
-      "hostname": "mattermost",
-      "template": "mattermost@280dcda67a67d071970ff838d0331c33c0c04710",
-      "peer-criteria": "mattermost",
-      "size": "${mattermostcontainertype}",
-      "port-mapping": [
-        {
-          "protocol": "tcp",
-          "domain": "${domain}",
-          "internal-port": "8065",
-          "external-port": "8090"
-        }
-      ]
     }
   ],
   "peer-criteria": [
@@ -30,7 +16,7 @@
     }
   ],
   "configuration": {
-    "source-url": "https://github.com/platium/mattermost/archive/master.zip",
+    "source-url": "https://github.com/absidish/mattermost/archive/master.zip",
     "ansible-playbook": "main.yml",
     "arguments": [
       {
